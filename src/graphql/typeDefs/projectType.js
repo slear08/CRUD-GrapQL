@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLID, GraphQLString } from 'graphql';
 import { ClientType } from './clientType.js';
-import { getClientProject } from '../../controllers/clientControllers.js';
+import { getClientProject } from '../resolvers/clientResolvers.js';
 
 export const ProjectType = new GraphQLObjectType({
     name: 'Project',

@@ -1,4 +1,4 @@
-import Project from '../models/Projects.js';
+import Project from '../../models/Projects.js';
 
 const getProjects = () => Project.find();
 const getProject = (parent, args) => Project.findById(args.id);
