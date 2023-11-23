@@ -1,6 +1,6 @@
 import { GraphQLNonNull, GraphQLString, GraphQLID } from 'graphql';
-import { addClient, deleteClient } from '../../controllers/clientControllers.js';
-import { ClientType } from '../types/clientType.js';
+import { addClient, deleteClient } from '../resolvers/clientResolvers.js';
+import { ClientType } from '../typeDefs/clientType.js';
 
 const clientMutations = {
     addClient: {

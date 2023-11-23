@@ -1,7 +1,7 @@
 // graphql/queries/projectQueries.js
 import { GraphQLID, GraphQLList } from 'graphql';
-import { ProjectType } from '../types/projectType.js';
-import { getProject, getProjects } from '../../controllers/projectControllers.js';
+import { ProjectType } from '../typeDefs/projectType.js';
+import { getProject, getProjects } from '../resolvers/projectResolvers.js';
 
 const projectQueries = {
     project: {

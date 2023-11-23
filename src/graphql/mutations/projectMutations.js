@@ -1,7 +1,7 @@
 // graphql/mutations/projectMutations.js
 import { GraphQLNonNull, GraphQLString, GraphQLID, GraphQLEnumType } from 'graphql';
-import { ProjectType } from '../types/projectType.js';
-import { addProject, deleteProject, updateProject } from '../../controllers/projectControllers.js';
+import { ProjectType } from '../typeDefs/projectType.js';
+import { addProject, deleteProject, updateProject } from '../resolvers/projectResolvers.js';
 
 const projectMutations = {
     addProject: {

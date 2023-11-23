@@ -1,7 +1,7 @@
 // graphql/queries/clientQueries.js
 import { GraphQLID, GraphQLList } from 'graphql';
-import { ClientType } from '../types/clientType.js';
-import { getClient, getClients } from '../../controllers/clientControllers.js';
+import { ClientType } from '../typeDefs/clientType.js';
+import { getClient, getClients } from '../resolvers/clientResolvers.js';
 
 const clientQueries = {
     client: {
