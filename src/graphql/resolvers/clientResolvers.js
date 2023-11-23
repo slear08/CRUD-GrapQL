@@ -1,5 +1,5 @@
-import Client from '../models/Clients.js';
-import Project from '../models/Projects.js';
+import Client from '../../models/Clients.js';
+import Project from '../../models/Projects.js';
 
 const getClients = () => Client.find();
 const getClient = (parent, args) => Client.findById(args.id);
